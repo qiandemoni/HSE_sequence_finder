@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "DNA/RNA Sequence Pattern Finder"
+abstract: "A Python tool for searching specific patterns in DNA/RNA sequences with support for mismatches, variable gap sizes, and comprehensive statistical analysis. Designed for promoter analysis, cis-regulatory element discovery, and transcription factor binding site identification."
+authors:
+  - family-names: "Qiande"
+    given-names: "Moni"
+    email: "mqiande@ufl.edu"
+    affiliation: "University of Florida"
+    orcid: "https://orcid.org/0000-0002-9797-4367"
+version: "1.0.0"
+date-released: "2025-10-11"
+license: Apache-2.0
+repository-code: "https://github.com/qiandemoni/HSE_sequence_finder"
+keywords:
+  - bioinformatics
+  - DNA sequence analysis
+  - RNA sequence analysis
+  - transcription factor binding sites
+  - promoter analysis
+  - cis-regulatory elements
+  - motif discovery
+  - pattern matching
+  - computational biology
+references:
+  - type: article
+    title: "PlantCARE, a database of plant cis-acting regulatory elements"
+    authors:
+      - family-names: Lescot
+        given-names: Magali
+    journal: "Nucleic Acids Research"
+    year: 2002
+    doi: "10.1093/nar/30.1.325"
+  - type: article
+    title: "PlantPAN 4.0: updated database for identifying conserved non-coding sequences"
+    authors:
+      - family-names: Chow
+        given-names: Chi-Nga
+    journal: "Nucleic Acids Research"
+    year: 2024
+    doi: "10.1093/nar/gkad1066"

@@ -1,0 +1,25 @@
+{
+  "input_fasta": "examples/sample_input.fasta",
+  "output_excel": "batch_results.xlsx",
+  "output_mode": "single",
+  "tasks": [
+    {
+      "name": "Task1_GAA_TTC_pattern",
+      "patterns": ["nGAAn", "nTTCn", "nGAAn"],
+      "gap_sizes": [0, 1, 2, 3],
+      "max_mismatches": 2
+    },
+    {
+      "name": "Task2_strict_matching",
+      "patterns": ["nGAAn", "nTTCn", "nGAAn"],
+      "gap_sizes": [0, 1],
+      "max_mismatches": 1
+    },
+    {
+      "name": "Task3_no_gaps",
+      "patterns": ["nGAAn", "nTTCn", "nGAAn"],
+      "gap_sizes": [0],
+      "max_mismatches": 2
+    }
+  ]
+}
