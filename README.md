@@ -144,7 +144,7 @@ python3 sequence_finder.py input.fasta output.xlsx \
 ```bash
 python3 sequence_finder.py input.fasta output.xlsx \
     --patterns "ACGTACGT" "TGCATGCA" \
-    --gap-sizes 0 1 2 3 4 5
+    --gap-sizes 0 1 2
 ```
 
 ---
@@ -172,7 +172,7 @@ Create a JSON file (e.g., `my_config.json`):
     {
       "name": "Task1_GAA_TTC_pattern",
       "patterns": ["nGAAn", "nTTCn", "nGAAn"],
-      "gap_sizes": [0, 1, 2, 3],
+      "gap_sizes": [0, 1, 2],
       "max_mismatches": 2
     },
     {
@@ -198,7 +198,7 @@ Create a JSON file (e.g., `my_config.json`):
 **Task fields:**
 - `name` (optional): Task identifier (default: `"Task_1"`, `"Task_2"`, etc.)
 - `patterns` (required): Array of pattern strings
-- `gap_sizes` (optional): Array of gap sizes to test (default: `[0, 1, 2, 3]`)
+- `gap_sizes` (optional): Array of gap sizes to test (default: `[0, 1, 2]`)
 - `max_mismatches` (optional): Maximum allowed mismatches (default: `2`)
 
 #### Example
@@ -340,7 +340,7 @@ Excel file with **7 columns**:
    - Specific bases (A, T, C, G) must match exactly or count as mismatches
    - Tracks mismatch positions for visualization
 
-4. **Gap Testing**: Process repeats for each gap size (e.g., 0, 1, 2, 3 bp)
+4. **Gap Testing**: Process repeats for each gap size (e.g., 0, 1, 2 bp)
 
 5. **TSS Coordinates**: Start positions converted to TSS-relative coordinates
    - Formula: `TSS Position = Start Position - Sequence Length`
