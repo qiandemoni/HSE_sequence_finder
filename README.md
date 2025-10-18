@@ -36,7 +36,7 @@ pip install -r requirements.txt
 # 3. Run example search
 python3 sequence_finder.py examples/sample_input.fasta output.xlsx \
     --patterns "nGAAn" "nTTCn" "nGAAn" \
-    --gap-sizes 0 1 2 3 \
+    --gap-sizes 0 1 2 \
     --max-mismatches 2
 
 # 4. Analyze results
